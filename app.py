@@ -16,7 +16,7 @@ def load_data():
         {"Product Name": "Silky Hair Serum", "Price": "$30", "Description": "Repairs damaged hair and adds shine.", 
          "Image URL": "https://i.imgur.com/TtfU8wG.jpg", "Category": "Haircare"},
         {"Product Name": "BB Cream", "Price": "$35", "Description": "All-in-one skin foundation and moisturizer.", 
-         "Image URL": "https://i.imgur.com/NuOdO7g.jpg", "Category": "Makeup"},
+         "Image URL": "photos/Photoroom-20241128_032528.jpg", "Category": "Makeup"},
     ])
 
 data = load_data()
