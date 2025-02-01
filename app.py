@@ -6,17 +6,28 @@ import pandas as pd
 def load_data():
     return pd.DataFrame([
         {"Product Name": "Luxury Lipstick", "Price": "$25", "Description": "Matte finish with long-lasting effect.", 
-         "Image URL": "https://i.imgur.com/I0aVkiW.jpg", "Category": "Makeup"},
+         "Image URL": "https://i.imgur.com/I0aVkiW.jpg", "Category": "Makeup", 
+         "WhatsApp Link": "https://wa.me/p/1234567890123456/94784727313"},
+        
         {"Product Name": "Hydrating Face Cream", "Price": "$40", "Description": "Moisturizing cream with natural extracts.", 
-         "Image URL": "photos/Photoroom-20241128_235342.jpg", "Category": "Skincare"},
+         "Image URL": "photos/Photoroom-20241128_235342.jpg", "Category": "Skincare",
+         "WhatsApp Link": "https://wa.me/p/8827644900615978/94784727313"},
+        
         {"Product Name": "Eyeliner Pen", "Price": "$15", "Description": "Waterproof and smudge-proof eyeliner.", 
-         "Image URL": "https://i.imgur.com/2nQbhwm.jpg", "Category": "Makeup"},
+         "Image URL": "https://i.imgur.com/2nQbhwm.jpg", "Category": "Makeup",
+         "WhatsApp Link": "https://wa.me/p/3456789012345678/94784727313"},
+        
         {"Product Name": "Luxury Perfume", "Price": "$80", "Description": "Elegant fragrance with floral notes.", 
-         "Image URL": "https://i.imgur.com/tp7W6Qj.jpg", "Category": "Fragrance"},
+         "Image URL": "https://i.imgur.com/tp7W6Qj.jpg", "Category": "Fragrance",
+         "WhatsApp Link": "https://wa.me/p/4567890123456789/94784727313"},
+        
         {"Product Name": "Silky Hair Serum", "Price": "$30", "Description": "Repairs damaged hair and adds shine.", 
-         "Image URL": "https://i.imgur.com/TtfU8wG.jpg", "Category": "Haircare"},
+         "Image URL": "https://i.imgur.com/TtfU8wG.jpg", "Category": "Haircare",
+         "WhatsApp Link": "https://wa.me/p/5678901234567890/94784727313"},
+        
         {"Product Name": "BB Cream", "Price": "$35", "Description": "All-in-one skin foundation and moisturizer.", 
-         "Image URL": "photos/Photoroom-20241128_032528.jpg", "Category": "Makeup"},
+         "Image URL": "photos/Photoroom-20241128_032528.jpg", "Category": "Makeup",
+         "WhatsApp Link": "https://wa.me/p/6789012345678901/94784727313"},
     ])
 
 data = load_data()
@@ -53,7 +64,10 @@ for index, row in filtered_data.iterrows():
         st.subheader(row["Product Name"])
         st.write(f"💰 **Price:** {row['Price']}")
         st.write(f"📌 {row['Description']}")
-        st.button(f"🛒 Order {row['Product Name']}", key=index)
+
+        # Dynamic WhatsApp Order Link
+        whatsapp_link = row["WhatsApp Link"]
+        st.markdown(f'<a href="{whatsapp_link}" target="_blank"><button style="background-color:#25D366;color:white;padding:10px;border-radius:5px;border:none;">🛒 Order Now</button></a>', unsafe_allow_html=True)
 
 # --- Footer ---
 st.markdown("---")
