@@ -8,7 +8,7 @@ def load_data():
         {"Product Name": "Luxury Lipstick", "Price": "$25", "Description": "Matte finish with long-lasting effect.", 
          "Image URL": "https://i.imgur.com/I0aVkiW.jpg", "Category": "Makeup"},
         {"Product Name": "Hydrating Face Cream", "Price": "$40", "Description": "Moisturizing cream with natural extracts.", 
-         "Image URL": "https://i.imgur.com/TjbElrG.jpg", "Category": "Skincare"},
+         "Image URL": "photos/Photoroom-20241128_235342.jpg", "Category": "Skincare"},
         {"Product Name": "Eyeliner Pen", "Price": "$15", "Description": "Waterproof and smudge-proof eyeliner.", 
          "Image URL": "https://i.imgur.com/2nQbhwm.jpg", "Category": "Makeup"},
         {"Product Name": "Luxury Perfume", "Price": "$80", "Description": "Elegant fragrance with floral notes.", 
